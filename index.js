@@ -12,44 +12,44 @@ const questions = [
 
     {
         type: "input",
-        message: "Describe your project.",
+        message: "Describe the project.",
         name: "description",
     },
 
     {
         type: "input",
         message: "How do you install your application?",
-        name: "installation",
+        name: "install",
     },
 
     {
         type: "input",
-        message: "How do you use your application?",
+        message: "How does one use your application?",
         name: "usage",
     },
 
     {
         type: "input",
-        message: "Who contributed?",
-        name: "contribution",
+        message: "Who are the contributors to this project?",
+        name: "contributors",
     },
 
     {
         type: "input",
-        message: "Enter test instructions.",
+        message: "If there are tests, then please enter instructions here.",
         name: "tests",
     },
 
     {
         type: "list",
-        message: "Select a license for your application.",
+        message: "Select a license for your application. If there is none needed then please select 'none'.",
         name: "license",
         choices: ["APM", "AUR license", "Bower", "MIT", "None"],
     },
 
     {
         type: "input",
-        message: "Enter your email address.",
+        message: "Enter an email where you can be contacted.",
         name: "email",
     },
 ];
