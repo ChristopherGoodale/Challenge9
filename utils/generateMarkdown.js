@@ -1,4 +1,4 @@
-function renderLicenseBadge(license) {
+function licenseBadge(license) {
     if (license !== "none") {
         return `<img src="https://img.shields.io/badge/license-${license}-blue.svg">`;
     } else {
@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
     }
 }
 
-function renderLicenseLink(license) {
+function licenseLink(license) {
     if (license !== "none") {
         return `* [License](#license)`;
     }
@@ -15,7 +15,7 @@ function renderLicenseLink(license) {
     }
 }
 
-function renderLicenseSection(license) {
+function licenseSection(license) {
     if (license !== "none") {
         return ` 
     
@@ -31,10 +31,11 @@ function renderLicenseSection(license) {
 // Generates Markdown
 function generateMarkdown(data) {
     return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
-    ${renderLicenseSection(data.license)};
+    ${licenseBadge(data.license)}
+    ${licenseSection(data.license)};
     
     # Description
+
    > ${data.description}
     
     # Table of Contents
@@ -43,7 +44,7 @@ function generateMarkdown(data) {
      * [Contributors](#contributors)
      * [Tests](#testInstructions)
     
-    ${renderLicenseLink(data.license)}
+    ${licenseLink(data.license)}
     # Install
     > ${data.install}
     # Usage
