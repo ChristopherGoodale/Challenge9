@@ -1,24 +1,23 @@
 function licenseBadge(license) {
-    if (license !== "none") {
+    if (license !== "None") {
         return `<img src="https://img.shields.io/badge/license-${license}-blue.svg">`;
     } else {
         return "";
     }
-}
+};
 
 function licenseLink(license) {
-    if (license !== "none") {
-        return `* [License](#license)`;
+    if (license !== "None") {
+        return `* [License](# license)`;
     }
     else {
         return "";
     }
-}
+};
 
 function licenseSection(license) {
     if (license !== "none") {
         return ` 
-    
     # License 
     
     > This project is licensed under ${license}`;
@@ -39,10 +38,13 @@ function generateMarkdown(data) {
    > ${data.description}
     
     # Table of Contents
-     * [Install](#install)
-     * [Usage](#usage)
-     * [Contributors](#contributors)
-     * [Tests](#testInstructions)
+     * [Install](# install)
+
+     * [Usage](# usage)
+    
+    * [Contributors](# contributors)
+    
+    * [Tests](# testInstructions)
     
     ${licenseLink(data.license)}
     # Install
