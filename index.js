@@ -18,7 +18,7 @@ const questions = [
 
     {
         type: "input",
-        message: "How do you install your application?",
+        message: "How does one install your application locally?",
         name: "install",
     },
 

@@ -1,6 +1,7 @@
 function licenseBadge(license) {
     if (license !== "None") {
-        return `<img src="https://img.shields.io/badge/license-${license}-blue.svg">`;
+        var1 = [`<img src="https://img.shields.io/badge/license-${license}-orange.svg">`]
+        return var1;
     } else {
         return "";
     }
@@ -8,7 +9,7 @@ function licenseBadge(license) {
 
 function licenseLink(license) {
     if (license !== "None") {
-        return `* [License](# license)`;
+        return `* [License](#license)`;
     }
     else {
         return "";
@@ -18,45 +19,47 @@ function licenseLink(license) {
 function licenseSection(license) {
     if (license !== "none") {
         return ` 
-    # License 
+# License 
     
-    > This project is licensed under ${license}`;
+> This project is licensed under ${license}`;
     }
     else {
         return "";
     }
 }
 
-// Generates Markdown
 function generateMarkdown(data) {
     return `# ${data.title}
-    ${licenseBadge(data.license)}
-    ${licenseSection(data.license)};
-    
-    # Description
 
-   > ${data.description}
-    
-    # Table of Contents
-     * [Install](# install)
+> ${licenseBadge(data.license)}
 
-     * [Usage](# usage)
+> ${licenseSection(data.license)}
     
-    * [Contributors](# contributors)
+# Description
+
+> ${data.description}
     
-    * [Tests](# testInstructions)
+# Table of Contents
+
+* [Install](#install)
+
+* [Usage](#usage)
+
+* [Contributors](#contributors)
     
-    ${licenseLink(data.license)}
-    # Install
-    > ${data.install}
-    # Usage
-    > ${data.usage}
-    # Contributors
-    > ${data.contributors}
-    # Tests
-    > ${data.testInstructions}
-    # Questions
-    ## If you have questions, then please email me at ${data.email}`;
+* [Tests](#testInstructions)
+    
+${licenseLink(data.license)}
+# Install
+> ${data.install}
+# Usage
+> ${data.usage}
+# Contributors
+> ${data.contributors}
+# Tests
+> ${data.testInstructions}
+# Questions
+## If you have questions, then please email me at ${data.email}`;
 }
 
 module.exports = generateMarkdown;
