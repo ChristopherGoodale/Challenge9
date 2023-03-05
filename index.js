@@ -37,7 +37,7 @@ const questions = [
     {
         type: "input",
         message: "If there are tests, then please enter instructions here.",
-        name: "tests",
+        name: "testInstructions",
     },
 
     {
