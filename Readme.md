@@ -1,15 +1,15 @@
-# apskdjfn
+# README-Generator
 
-> <img src="https://img.shields.io/badge/license-APM-orange.svg">
+> <img src="https://img.shields.io/badge/license-AUR license-orange.svg">
 
 >  
 # License 
     
-> This project is licensed under APM
+> This project is licensed under AUR license
     
 # Description
 
-> a;psogijh
+> The intent of this project is to give end users a way to automatically generate their markdowns.
     
 # Table of Contents
 
@@ -23,12 +23,12 @@
     
 * [License](#license)
 # Install
-> a;spojfdn
+> Install the application by navigating to my github and git cloning to the local machine.
 # Usage
-> as;kdfjn
+> Run npm i in terminal and then "node index".
 # Contributors
-> asdf;kjn
+> Christopher Goodale
 # Tests
-> a;slvjkdn
+> No tests
 # Questions
-## If you have questions, then please email me at a;ojnf
+## If you have questions, then please email me at christophergdale@gmail.com
