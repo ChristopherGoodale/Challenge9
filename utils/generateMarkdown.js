@@ -9,7 +9,8 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license !== "none") {
         return `* [License](#license)`;
-    } else {
+    }
+    else {
         return "";
     }
 }
@@ -21,7 +22,8 @@ function renderLicenseSection(license) {
     # License 
     
     > This project is licensed under ${license}`;
-    } else {
+    }
+    else {
         return "";
     }
 }
